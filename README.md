@@ -1,10 +1,16 @@
-### clone repo
+### Clone repo
 git clone git@github.com:dbads/ghibli-project.git 
 
-### create a virtual environment
+### Setup secrests
+create a `.env` file in the root of folder parallel to manage.py file and put following secrets in it
+
+API_KEY=apikey <br>
+REDIS_HOST=localhost
+
+### Create a virtual environment
 python -m venv venv
 
-### activate env
+### Activate env
 source venv/bin/activate
 
 ### Running server
@@ -12,7 +18,6 @@ python manage.py runserver
 
 ### Running tests
 python manage.py test
-
 
 #### To test the endpoint, hit the following url
 localhost:8000/films?id=2baf70d1-42bb-4437-b551-e5fed5a87abe&API-KEY=apikey
